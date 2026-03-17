@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manual de Sobrevivência Financeira</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{box-sizing:border-box}
+
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:#f6f8fc;
+color:#0f172a;
+line-height:1.6
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:20px
+}
+
+/* HERO */
+.hero{
+background:linear-gradient(135deg,#0f172a,#1e293b);
+color:white;
+padding:90px 20px;
+text-align:center
+}
+
+.hero h1{
+font-size:42px;
+margin-bottom:20px
+}
+
+.hero p{
+font-size:20px;
+max-width:700px;
+margin:auto;
+opacity:.9
+}
+
+.cta-main{
+position:relative;
+overflow:hidden;
+display:inline-block;
+margin-top:35px;
+background:linear-gradient(135deg,#22c55e,#16a34a);
+color:white;
+padding:20px 38px;
+font-size:21px;
+font-weight:700;
+text-decoration:none;
+border-radius:12px;
+box-shadow:0 12px 30px rgba(0,0,0,.25);
+transition:transform .2s, box-shadow .2s;
+animation:pulse 2s infinite
+}
+
+.cta-main::after{
+content:"";
+position:absolute;
+top:0;
+left:-120%;
+width:60%;
+height:100%;
+background:linear-gradient(120deg,transparent,rgba(255,255,255,.6),transparent);
+transform:skewX(-25deg);
+animation:shine 3s infinite
+}
+
+.cta-main:hover{
+transform:translateY(-3px)
+}
+
+/* TRUST BAR */
+.trust-bar{
+background:white;
+text-align:center;
+padding:20px;
+box-shadow:0 8px 20px rgba(0,0,0,.05)
+}
+
+.trust-items{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap
+}
+
+.trust-item{
+font-size:14px;
+background:#f1f5f9;
+padding:10px 18px;
+border-radius:6px
+}
+
+/* SECTIONS */
+section{
+background:white;
+margin-top:30px;
+padding:40px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,.05)
+}
+
+h2{
+font-size:30px;
+margin-top:0
+}
+
+.problem-list li{
+margin-bottom:10px;
+font-weight:500
+}
+
+/* GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+margin-top:20px
+}
+
+.card{
+background:#f8fafc;
+padding:18px;
+border-radius:8px;
+font-weight:500
+}
+
+/* BONUS */
+.bonus{
+background:#ecfdf5;
+padding:18px;
+border-left:6px solid #22c55e;
+border-radius:8px;
+margin-top:12px;
+font-weight:500
+}
+
+/* TESTIMONIALS */
+.testimonial{
+background:#f8fafc;
+padding:20px;
+border-radius:8px
+}
+
+.testimonial strong{
+display:block;
+margin-top:10px
+}
+
+/* PRICE */
+.price-section{
+text-align:center;
+background:#0f172a;
+color:white
+}
+
+.price{
+font-size:48px;
+font-weight:700;
+color:#4ade80;
+margin:10px 0
+}
+
+.buy-button{
+position:relative;
+overflow:hidden;
+display:inline-block;
+margin-top:20px;
+background:linear-gradient(135deg,#22c55e,#16a34a);
+color:white;
+padding:22px 40px;
+font-size:23px;
+font-weight:700;
+text-decoration:none;
+border-radius:12px;
+box-shadow:0 15px 40px rgba(0,0,0,.35);
+transition:transform .2s, box-shadow .2s;
+animation:pulse 2s infinite
+}
+
+.buy-button::after{
+content:"";
+position:absolute;
+top:0;
+left:-120%;
+width:60%;
+height:100%;
+background:linear-gradient(120deg,transparent,rgba(255,255,255,.6),transparent);
+transform:skewX(-25deg);
+animation:shine 3s infinite
+}
+
+/* GUARANTEE */
+.guarantee{
+text-align:center;
+background:#f0fdf4
+}
+
+/* FAQ */
+.faq-item{
+margin-bottom:15px
+}
+
+.faq-item strong{
+display:block;
+margin-bottom:5px
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:40px;
+color:#64748b;
+font-size:14px
+}
+
+/* MOBILE */
+@media(max-width:750px){
+
+.hero h1{
+font-size:30px
+}
+
+.grid{
+grid-template-columns:1fr
+}
+
+}
+
+@keyframes pulse{
+0%{transform:scale(1)}
+50%{transform:scale(1.05)}
+100%{transform:scale(1)}
+}
+
+@keyframes shine{
+0%{left:-120%}
+60%{left:120%}
+100%{left:120%}
+}
+50%{transform:scale(1.05)}
+100%{transform:scale(1)}
+}
+
+.cta-main:hover,.buy-button:hover{
+transform:scale(1.08);
+box-shadow:0 18px 45px rgba(0,0,0,.4)
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+
+<h1>Como Organizar Seu Dinheiro Mesmo Ganhando Apenas 1 Salário</h1>
+
+<p>Aprenda um método simples para controlar seus gastos, sair das dívidas e finalmente fazer seu dinheiro durar até o final do mês.</p>
+
+<a class="cta-main" href="https://pay.kiwify.com.br/NFJATe2">QUERO ORGANIZAR MEU DINHEIRO</a>
+
+</div>
+
+<!-- TRUST -->
+<div class="trust-bar">
+
+<div class="trust-items">
+
+<div class="trust-item">Pagamento 100% seguro</div>
+<div class="trust-item">Acesso imediato</div>
+<div class="trust-item">Garantia de 7 dias</div>
+
+</div>
+
+</div>
+
+<div class="container">
+
+<section>
+
+<h2>Você vive preso nesse ciclo?</h2>
+
+<ul class="problem-list">
+<li>O salário cai e o dinheiro acaba em poucos dias</li>
+<li>Contas atrasadas acumulando</li>
+<li>Cartão de crédito sempre no limite</li>
+<li>Impossível guardar dinheiro</li>
+<li>Sensação de trabalhar muito e nunca sair do lugar</li>
+</ul>
+
+<p>A maioria das pessoas nunca aprendeu educação financeira de forma simples. Mas com um método prático isso pode mudar.</p>
+
+</section>
+
+<section>
+
+<h2>O que você vai aprender</h2>
+
+<div class="grid">
+
+<div class="card">Como dividir seu salário de forma inteligente</div>
+<div class="card">Método simples para sair das dívidas</div>
+<div class="card">Como fazer o dinheiro durar até o fim do mês</div>
+<div class="card">Como parar de gastar sem perceber</div>
+<div class="card">Como começar uma reserva financeira</div>
+<div class="card">Sistema simples de controle financeiro</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Bônus exclusivos</h2>
+
+<div class="bonus">Planilha de controle financeiro</div>
+<div class="bonus">Checklist de organização financeira</div>
+<div class="bonus">Desafio financeiro de 30 dias</div>
+
+</section>
+
+<section>
+
+<h2>O que as pessoas estão dizendo</h2>
+
+<div class="grid">
+
+<div class="testimonial">"Depois que comecei a aplicar o método do manual, consegui controlar melhor meus gastos."<strong>Carlos – 29 anos</strong></div>
+
+<div class="testimonial">"Material simples e direto. Em poucas semanas já consegui organizar meu salário."<strong>Juliana – 34 anos</strong></div>
+
+<div class="testimonial">"Nunca tinha entendido como organizar meu dinheiro até ler esse guia."<strong>Marcos – 41 anos</strong></div>
+
+</div>
+
+</section>
+
+<section class="price-section">
+
+<h2>Oferta especial</h2>
+
+<div class="price">R$29,99</div>
+
+<p>Pagamento único • Acesso imediato</p>
+
+<a class="buy-button" href="https://pay.kiwify.com.br/NFJATe2">COMPRAR AGORA</a>
+
+</section>
+
+
+
+<section>
+
+<h2>Perguntas frequentes</h2>
+
+<div class="faq-item">
+<strong>Como recebo o material?</strong>
+Após o pagamento você recebe acesso imediato ao conteúdo.
+</div>
+
+<div class="faq-item">
+<strong>Preciso instalar algum aplicativo?</strong>
+Não. O material pode ser acessado diretamente do celular ou computador.
+</div>
+
+<div class="faq-item">
+<strong>Esse método funciona para quem ganha pouco?</strong>
+Sim. O guia foi criado justamente para pessoas que ganham até um salário.
+</div>
+
+</section>
+
+</div>
+
+<footer>
+
+<p>© 2026 Manual de Sobrevivência Financeira • Todos os direitos reservados</p>
+
+</footer>
+
+
+
+<!-- Notificação de compra recente -->
+<div id="purchase-popup" style="position:fixed;bottom:20px;left:20px;background:white;padding:14px 18px;border-radius:8px;box-shadow:0 10px 25px rgba(0,0,0,.2);font-size:14px;display:none;max-width:260px;z-index:9999">
+<strong id="buyer-name"></strong> acabou de comprar o manual.
+</div>
+
+<script>
+const buyers=["Carlos","Juliana","Marcos","Fernanda","Rafael","Patricia","Lucas","Amanda","Bruno","Camila"];
+
+function showPurchasePopup(){
+const popup=document.getElementById('purchase-popup');
+const nameEl=document.getElementById('buyer-name');
+
+const randomName=buyers[Math.floor(Math.random()*buyers.length)];
+nameEl.textContent=randomName;
+
+popup.style.display='block';
+
+setTimeout(()=>{
+popup.style.display='none';
+},4000);
+}
+
+setTimeout(showPurchasePopup,6000);
+setInterval(showPurchasePopup,12000);
+</script>
+
+
+
+<!-- Barra fixa de compra -->
+<div id="sticky-buy" style="position:fixed;bottom:0;left:0;width:100%;background:#0f172a;color:white;padding:14px 20px;display:flex;justify-content:center;align-items:center;gap:20px;z-index:9998;box-shadow:0 -5px 20px rgba(0,0,0,.2)">
+
+<span style="font-weight:600">Manual de Sobrevivência Financeira — R$29,99</span>
+
+<a href="https://pay.kiwify.com.br/NFJATe2" style="background:#22c55e;color:white;padding:12px 22px;border-radius:6px;text-decoration:none;font-weight:600">COMPRAR AGORA</a>
+
+</div>
+
+</body>
+</html>
